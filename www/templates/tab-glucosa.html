@@ -1,0 +1,26 @@
+<ion-view view-title="Anota tu glucosa">
+  <ion-content class="padding">
+    <div class="list" ng-controller="SaveCtrlG as salvar">
+
+        <div class="list">
+          <label class="item item-input">
+
+              <span class="input-label">Tu azucar: </span>
+              <input type="number" ng-bind="datos" ng-model="datos"></input>
+
+          </label>
+          <label class="item item-input">
+
+              <span class="input-label">Fecha: </span>
+              <input type="date" ng-bind="fecha" ng-model="fecha"></input>
+
+          </label>
+        </div>
+        <div class="list">
+          <button class="button" ng-click="mas()">+</button>
+          <button class="button" ng-click="menos()">-</button>
+        </div>
+        <button class="button button-block" ng-click="save(datos, fecha)">Save</button>
+    </div>
+  </ion-content>
+</ion-view>

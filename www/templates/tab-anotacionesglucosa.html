@@ -1,0 +1,22 @@
+<ion-view view-title="Tus anotacions de Azucar">
+  <ion-content class="padding">
+    <div class="list" ng-controller="LoadCtrlG">
+      <div class="list" ng-init="resultados">
+        <ul>
+            <li ng-repeat="x in resultados">
+              <!--<li ng-repeat="x in resultados track by resultados.id">-->
+                <input type="date" ng-bind="fecha" ng-model="fecha"></input>
+                <input type="text" ng-bind="x.glucosa" ng-model="x.glucosa"></input>
+
+            </li>
+
+        </ul>
+
+      </div>
+        <button class="button button-block" ng-click="enviar()">Enviar</button>
+    </div>
+
+
+
+  </ion-content>
+</ion-view>

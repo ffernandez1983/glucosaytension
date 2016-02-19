@@ -1,0 +1,19 @@
+<ion-view view-title="Anota tu tension">
+  <ion-content class="padding">
+    <div class="list" ng-controller="SaveCtrlT as salvar">
+        <div class="list">
+          <label class="item item-input">
+
+              <span class="input-label">Tu tension: </span>
+              <input type="number" ng-bind="datos" ng-model="datos"></input>
+
+          </label>
+        </div>
+        <div class="list">
+          <button class="button" ng-click="mas()">+</button>
+          <button class="button" ng-click="menos()">-</button>
+        </div>
+        <button class="button button-block" ng-click="save(datos)">Save</button>
+    </div>
+  </ion-content>
+</ion-view>
