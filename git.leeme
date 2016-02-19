@@ -1,0 +1,10 @@
+Repo: https://github.com/ffernandez1983/glucosaytension.git
+Usuario: ffernandez1983
+pass: ***
+
+echo "# glucosaytension" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ffernandez1983/glucosaytension.git
+git push -u origin master
